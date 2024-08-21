@@ -1,0 +1,134 @@
+/* botão de login */
+.login-btn {
+    background-color: #007BFF;
+    color: white; 
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: 30px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /
+}
+
+/*popup de login */
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 10px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.formLogin h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.formLogin .box {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.formLogin .btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+.formLogin .btn:hover {
+    background-color: #0056b3; 
+}
+
+.formLogin p {
+    text-align: center;
+    color: rgb(13, 12, 12);
+    font-size: 15px;
+}
+
+/*botões lado a lado */
+.formLogin .buttons {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.formLogin .buttons a {
+    background-color: #3b5998; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.formLogin .buttons a:hover {
+    background-color: #2d4373;  
+}
+
+.formLogin .buttons a:last-child {
+    background-color: #3b5998; 
+}
+
+.formLogin .buttons a:last-child:hover {
+    background-color: #2d4373; 
+}
+
+.messageDiv{
+    background-color: rgb(147, 16, 16);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
+}
